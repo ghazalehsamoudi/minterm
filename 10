@@ -1,0 +1,22 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+main(){
+	int a,b=1;
+	cout<<"enter a number:";
+	cin>>a;
+	int m=0,aval=0;
+	for(int b=1;b<=a;b++){
+		   m=0;
+		   if(a%b==0){
+		   for(int n=1;n<=b;n++){
+			  if(b%n==0)
+			     ++m;
+		   }
+	   }
+		    if(m==2){
+		    ++aval;
+		    cout<<"b="<<b<<'\t';
+		    }
+	 }
+}
