@@ -1,0 +1,22 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int fact(int i){
+	int f;
+	for(int j=i;j>=1;j--)
+	    f=f*j;
+    return f;
+}
+main(){
+	int i,n,f1;
+	cout<<"enter n:";
+	cin>>n;
+	float f,sum;
+	for(int i=1;i<=n;i++){
+		f1=fact(i);
+		//f1=i!
+		f=1/f1;
+		sum+=f;		
+	}
+	cout<<sum;
+} 
